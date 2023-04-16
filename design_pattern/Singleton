@@ -1,0 +1,24 @@
+class Singleton1{
+
+
+
+//    私有构造方法，禁止在其他类中创建实例
+private Singleton() {
+}
+}
+
+public class Singleton2 {
+
+    private static final Singleton2 instance = new Singleton2();
+
+    private Singleton2() {
+    }
+
+    public static Singleton2 getInstance() {
+        return instance;
+    }
+}
+
+public class Singleton{
+
+}
